@@ -1,29 +1,31 @@
-# corporate-ui-vue
+# Corporate UI in a Vue application
+
+To run this project locally you will need NodeJS locally then.
+Simply clone this repo, install all dependencies and start it:
+```
+git clone https://github.com/scania/corporate-ui-vue.git
+cd corporate-ui-vue
+npm i
+npm start
+```
 
 ## Project setup
-```
-npm install
-```
+This project uses *Corporate Ui* together with *Scania theme* as well as the folowing vue plugins: **, *vue-fragment*, *vue-router*
 
-### Compiles and hot-reloads for development
+## Technical notes
+To use Corporate Ui do the folowing:
 ```
-npm run serve
+import { defineCustomElements, addTheme } from 'corporate-ui-dev';
+defineCustomElements(['c-theme', 'c-header', 'c-footer', 'c-navigation', 'c-content']);
 ```
-
-### Compiles and minifies for production
+To use scania-theme do the folowing:
 ```
-npm run build
+import { theme as scania } from 'scania-theme';
+addTheme(scania);
 ```
-
-### Run your tests
+Add a ignore rule for Corporate Ui custom elements and use of Vue router:
 ```
-npm run test
+Vue.config.ignoredElements = [/c-\w*/];
+Vue.use(VueRouter)
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+We also configured the routers active class

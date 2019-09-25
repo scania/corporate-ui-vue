@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Fragment>
+    <c-theme name="scania" global="true"></c-theme>
+    <Header />
+    <Navigation />
+    <c-content>
+      <router-view></router-view>
+    </c-content>
+    <Footer />
+  </Fragment>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import { Fragment } from 'vue-fragment'
+  import Header from './components/Header.vue'
+  import Navigation from './components/Navigation.vue'
+  import Footer from './components/Footer.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      Fragment,
+      Header,
+      Navigation,
+      Footer
+    }
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
