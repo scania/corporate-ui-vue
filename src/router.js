@@ -11,6 +11,7 @@ export const routes = [
   { path: '/info', name: 'list', component: Empty, children: [
     { path: 'list', name: 'list', component: List },
     { path: 'table', name: 'table', component: Table },
+    { path: 'form', name: 'form', component: None },
 
     { path: '', redirect: 'list' },
   ] },
