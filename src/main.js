@@ -8,17 +8,14 @@ import { theme as scania } from 'scania-theme';
 import { router } from './router'
 
 defineCustomElements(['c-theme', 'c-header', 'c-footer', 'c-navigation', 'c-content']);
-
 addTheme(scania);
 
 Vue.config.productionTip = false
-
 Vue.config.ignoredElements = [/c-\w*/];
-
 Vue.use(VueRouter)
 
 new Vue({
   router,
-  el: '#app', // Vue have a default node where it renders the app
+  el: 'body',
   render: h => h(App),
 })

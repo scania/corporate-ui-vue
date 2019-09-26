@@ -1,12 +1,15 @@
 <template>
-  <c-header site-name="App" site-url="/#/">
+  <c-header v-bind:site-name="name" site-url="/#/">
     <router-link slot="items" to="/global">global</router-link>
   </c-header>
 </template>
 
 <script>
   export default {
-    name: 'Header'
+    name: 'Header',
+    data: () => ({
+      name: 'App'
+    }),
   }
 </script>
 
