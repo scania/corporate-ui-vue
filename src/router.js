@@ -1,23 +1,19 @@
 import VueRouter from 'vue-router'
 
 import Home from './views/Home.vue'
-import Contact from './views/Contact.vue'
-// import About from './views/About.vue'
-import Project from './views/Project.vue'
-import Team from './views/Team.vue'
+import List from './views/List.vue'
+import Table from './views/Table.vue'
 import None from './views/None.vue'
 import Empty from './views/Empty.vue'
 
 export const routes = [
   { path: '/home', name: 'home', component: Home },
-  { path: '/about', name: 'about', component: Empty, children: [
-    { path: 'project', name: 'project', component: Project },
-    { path: 'team', name: 'team', component: Team },
+  { path: '/info', name: 'list', component: Empty, children: [
+    { path: 'list', name: 'list', component: List },
+    { path: 'table', name: 'table', component: Table },
 
-    { path: '', redirect: 'project' },
+    { path: '', redirect: 'list' },
   ] },
-  // { path: '/about', component: Empty, ...About },
-  { path: '/contact', name: 'contact', component: Contact },
 
   { path: '/', redirect: '/home' },
   { path: '*', component: None },
