@@ -8,7 +8,7 @@ import Empty from './views/Empty.vue'
 
 export const routes = [
   { path: '/home', name: 'home', component: Home },
-  { path: '/info', name: 'list', component: Empty, children: [
+  { path: '/info', name: 'info', component: Empty, children: [
     { path: 'list', name: 'list', component: List },
     { path: 'table', name: 'table', component: Table },
     { path: 'form', name: 'form', component: None },
