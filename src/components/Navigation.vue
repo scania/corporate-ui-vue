@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <c-navigation slot="sub" v-bind:caption="parent.name" :active="active.children ? true : false" v-bind:target="active.path">
+    <c-navigation slot="sub" v-bind:caption="parent.name" :active="active.children ? true : false" v-bind:target="'#' + active.path">
       <router-link
         slot="primary-items"
         v-for="(item, index) in active.children"
