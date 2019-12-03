@@ -7,7 +7,7 @@ import { theme as scania } from 'scania-theme'
 
 import { router } from './router'
 
-defineCustomElements(['c-theme', 'c-header', 'c-footer', 'c-navigation', 'c-content'])
+defineCustomElements()
 addTheme(scania)
 
 Vue.config.productionTip = false
