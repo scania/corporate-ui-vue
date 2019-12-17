@@ -15,7 +15,7 @@ This project uses **Corporate Ui** together with **Scania theme** as well as **v
 ## Technical notes
 To use **Corporate Ui** do the following:
 ```javascript
-import { defineCustomElements, addTheme } from 'corporate-ui-dev'
+import { defineCustomElements, addTheme } from 'corporate-ui'
 defineCustomElements()
 ```
 To use **Scania theme** do the following:
