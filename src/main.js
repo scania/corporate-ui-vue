@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import { defineCustomElements, addTheme } from 'corporate-ui-dev'
+import { defineCustomElements, addTheme } from 'corporate-ui'
 import { theme as scania } from 'scania-theme'
 
 import { router } from './router'
