@@ -7,6 +7,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "link": "npm link corporate-ui && npm link scania-theme",
     "jekyll": "cd dist && jekyll serve --baseurl '/%npm_package_name%'",
     "release": "npm run build && gh-pages -d dist"
   },

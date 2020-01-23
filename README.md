@@ -29,3 +29,28 @@ Vue.config.ignoredElements = [/c-\w*/]
 Vue.use(VueRouter)
 ```
 We also configured the routers active class and mount the app to the body node
+
+## Run with local corporate-ui
+<details>
+  <summary>
+  Local setup
+  </summary>
+
+
+  Create npm links of **Corporate Ui** and **Scania theme**
+  ```
+  cd ../corporate-ui
+  npm link
+  cd ../scania-theme
+  npm link
+  ```
+
+  Add links to **Corporate Ui** and **Scania theme**
+  ```
+  npm run link
+    // or
+  cd corporate-ui-site
+  npm link corporate-ui
+  npm link scania-theme
+  ```
+</details>
