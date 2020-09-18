@@ -16,7 +16,7 @@ npm start
 
 Visit our Design System at [Digital.design.scania.com](https://digitaldesign.scania.com/) for more information
 
-For more information about how to use Corporate-Ui and Scania-Theme go to [digtal.design.scania.com/getting-started](https://digitaldesign.scania.com/getting-started/development)
+For more information about how to use Corporate-Ui and Scania-Theme go to [digtaldesign.scania.com/getting-started](https://digitaldesign.scania.com/getting-started/development)
 
 ## Project setup
 This project uses **Corporate Ui** together with **Scania theme** as well as **vue-router**
