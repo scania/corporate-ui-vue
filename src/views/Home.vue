@@ -2,7 +2,8 @@
   <section>
     <div class="container">
       <h1>Home</h1>
-      <p>Home page</p>
+      <h3>Visit Scania Digtal Design System at <a href='https://digitaldesign.scania.com'>digitaldesign.scania.com</a><c-icon name='scania-external_link'></c-icon></h3>
+      <p>Developing in our design system visit our <a href='https://github.com/scania/corporate-ui'>github</a><c-icon name='scania-external_link'></c-icon></p>
     </div>
   </section>
 </template>
@@ -14,4 +15,9 @@
 </script>
 
 <style scoped>
+c-icon {
+  font-size: 30px;
+  margin-left: 5px;
+  font-weight: bold;
+}
 </style>
